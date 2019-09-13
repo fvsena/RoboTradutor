@@ -1,0 +1,5 @@
+c:\users\felipe.sena\documents\visual studio 2015\Projects\RoboTradutor\RoboTradutor\bin\Debug\RoboTradutor.exe.config
+c:\users\felipe.sena\documents\visual studio 2015\Projects\RoboTradutor\RoboTradutor\bin\Debug\RoboTradutor.exe
+c:\users\felipe.sena\documents\visual studio 2015\Projects\RoboTradutor\RoboTradutor\bin\Debug\RoboTradutor.pdb
+c:\users\felipe.sena\documents\visual studio 2015\Projects\RoboTradutor\RoboTradutor\obj\Debug\RoboTradutor.exe
+c:\users\felipe.sena\documents\visual studio 2015\Projects\RoboTradutor\RoboTradutor\obj\Debug\RoboTradutor.pdb
