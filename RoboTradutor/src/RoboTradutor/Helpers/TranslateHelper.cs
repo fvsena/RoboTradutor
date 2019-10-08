@@ -12,10 +12,10 @@ namespace RoboTradutor.Helpers
         {
             StringBuilder sb = new StringBuilder();
             sb.Append("?client=webapp");
-            sb.Append("&sl=auto&");
-            sb.Append("tl =pt&");
-            sb.Append("hl =pt-BR&");
-            sb.Append("dt =at&");
+            sb.Append("&sl=en&");
+            sb.Append("tl=pt&");
+            sb.Append("hl=pt-BR&");
+            sb.Append("dt=at&");
             sb.Append("dt=bd&");
             sb.Append("dt=ex&");
             sb.Append("dt=ld&");
@@ -30,7 +30,7 @@ namespace RoboTradutor.Helpers
             sb.Append("ssel=0&");
             sb.Append("tsel=0&");
             sb.Append("kc=5&");
-            sb.Append("tk=782078.871213&");
+            sb.Append("tk=101779.469895&");
             sb.Append($"q={expressao}");
             return sb.ToString();
         }

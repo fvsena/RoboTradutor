@@ -37,7 +37,7 @@ namespace RoboTradutor.Processos
                             AcessaTradutor();
                             break;
                         case 1:
-                            EnviaTraducao("start");
+                            EnviaTraducao("intern");
                             break;
                         case 2:
                             break;
@@ -84,7 +84,7 @@ namespace RoboTradutor.Processos
         {
             try
             {
-                requestHelper.LoadRequest("https://translate.google.com/translate_a/single" + TranslateHelper.ParametrosTraducao(expressao));
+                requestHelper.LoadRequest("https://translate.google.com/translate_a/t" + TranslateHelper.ParametrosTraducao(expressao));
                 requestHelper.Host("translate.google.com");
                 requestHelper.KeepAlive(true);
                 requestHelper.AddRequestHeader("Upgrade-Insecure-Requests", "1");
@@ -95,6 +95,8 @@ namespace RoboTradutor.Processos
                 requestHelper.AddRequestHeader(HttpRequestHeader.AcceptLanguage, "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7");
                 requestHelper.ExecuteRequest("GET");
                 string response = requestHelper.GetResponseBody();
+                string retorno = response.Substring(response.IndexOf("\"")+1);
+                retorno = retorno.Substring(0, retorno.IndexOf("\""));
             }
             catch (Exception ex)
             {
